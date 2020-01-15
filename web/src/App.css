@@ -1,0 +1,9 @@
+#app {
+    max-width: 1200px; /*em tela muito grande esse será o maximo*/
+    margin: 0 auto; /*centralizado*/
+    padding: 60px 30px;
+
+    display: flex;
+    flex-direction: row; /*tudo em uma linha*/
+    align-items: flex-start;
+}
