@@ -8,10 +8,10 @@ module.exports = {
 
         const { latitude, longitude, techs } = request.query ; // desestruturação
 
-        console.log(request.query);
+        // console.log(request.query);
 
         const techsArray = parseStringAsArray(techs);
-        console.log(techsArray);
+        // console.log(techsArray);
 
         const devs = await Dev.find({ 
             techs: {
@@ -27,7 +27,7 @@ module.exports = {
                 }
             }
          });
-         console.log(devs);
+         // console.log(devs);
 
         return response.json({ devs });
     }
